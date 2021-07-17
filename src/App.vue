@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import HeaderDefault from "./components/layout/HeaderDefault.vue";
-import FooterDefault from "./components/layout/FooterDefault.vue";
+import HeaderDefault from "./components/Layout/HeaderDefault.vue";
+import FooterDefault from "./components/Layout/FooterDefault.vue";
 
 // import * as modernizr from "./assets/js/vendor/modernizr-3.11.2.min";
 // import * as jquery from "./assets/js/vendor/jquery-3.6.0.min";
