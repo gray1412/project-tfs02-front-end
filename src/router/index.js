@@ -2,7 +2,10 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import ProductDetailPage from "../views/ProductDetailPage.vue";
 import Homepage from "../views/Homepage.vue";
-import AuthPage from "../views/AuthPage.vue";
+import Login from "../views/auth/Login.vue";
+import Register from "../views/auth/Register.vue";
+import ForgotPassword from "../views/auth/ForgotPassword.vue";
+import ResetPassword from "../views/auth/ResetPassword.vue";
 import CartPage from "../views/CartPage.vue";
 import CheckoutPage from "../views/CheckoutPage.vue";
 
@@ -15,22 +18,37 @@ const routes = [
     component: Homepage,
   },
   {
-    path: "/ProductDetailPage",
+    path: "/product-detail",
     name: "ProductDetailPage",
     component: ProductDetailPage,
   },
   {
-    path: "/AuthPage",
-    name: "AuthPage",
-    component: AuthPage,
+    path: "/auth-login",
+    name: "Login",
+    component: Login,
   },
   {
-    path: "/CartPage",
+    path: "/auth-register",
+    name: "Register",
+    component: Register,
+  },
+  {
+    path: "/auth-forgot",
+    name: "ForgotPassword",
+    component: ForgotPassword,
+  },
+  {
+    path: "/auth-reset",
+    name: "ResetPassword",
+    component: ResetPassword,
+  },
+  {
+    path: "/cart",
     name: "CartPage",
     component: CartPage,
   },
   {
-    path: "/CheckoutPage",
+    path: "/checkout",
     name: "CheckoutPage",
     component: CheckoutPage,
   },
